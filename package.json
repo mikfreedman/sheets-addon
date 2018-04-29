@@ -1,0 +1,33 @@
+{
+  "author": "Author",
+  "description": "Sheets Addon",
+  "devDependencies": {
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.1",
+    "babel-preset-es2015": "6.24.0",
+    "babel-register": "6.24.0",
+    "copy-webpack-plugin": "^4.4.1",
+    "gas-local": "^1.3.0",
+    "jshint": "^2.9.5",
+    "lodash.template": "^4.4.0",
+    "@google/clasp": "^1.1.5",
+    "webpack": "2.3.2",
+    "webpack-karma-jasmine": "^1.0.4",
+    "wrapper-webpack-plugin": "^1.0.0"
+  },
+  "license": "MIT",
+  "name": "sheets-addon",
+  "scripts": {
+    "lint": "node_modules/.bin/jshint src/**.js",
+    "build": "node_modules/.bin/webpack",
+    "pretest": "npm run lint",
+    "test": "karma start --single-run",
+    "test-watch": "karma start",
+    "deploy": "npm run build && ./node_modules/.bin/clasp push"
+  },
+  "repository": "https://github.com/mikfreedman/sheets-addon",
+  "version": "1.0.0",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
