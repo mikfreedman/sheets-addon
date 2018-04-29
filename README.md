@@ -48,5 +48,5 @@ Paste the contents of `dist/Code.gs` into the GAS editor's `Code.gs` file
 Or if you have installed the `clasp` method mentioned above
 
 ```bash
-npm run test && npm run build && clasp push
+npm run build && ./node_modules/.bin/clasp push
 ```
